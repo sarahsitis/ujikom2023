@@ -160,6 +160,10 @@ return [
          * Package Service Providers...
          */
 
+         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+         
+         Yajra\DataTables\DataTablesServiceProvider::class,
+         Yajra\DataTables\HtmlServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -183,6 +187,9 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+
     ])->toArray(),
 
 ];
